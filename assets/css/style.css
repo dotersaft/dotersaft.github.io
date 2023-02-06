@@ -1,0 +1,142 @@
+body{
+    background-color: rgb(0, 0, 0);
+    font-family: 'Roboto Mono';
+    font-size: 15;
+    color: #ffffff;
+    line-height: 1.6;
+
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+/* Intro */
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100hv;
+    margin-top: 100px;
+}
+.intro_title:after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #fff;
+    margin: 60px auto;
+}
+.intro_title {
+    font-size: 80px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 1;
+    
+}
+.intro_inner {
+    text-align: center;
+    width: 100%;
+    min-width: 880px;
+    margin: 0 auto;
+}
+.intro_subtitle {
+    font-style: 72px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+/* Header*/
+.header {
+    padding-top: 10px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.header_logo {
+    font-size: 17px;
+    font-weight: 700;
+    color: #ffffff;
+}
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Nav */
+.nav {
+    font-size: 14px;
+    text-transform: uppercase;
+
+}
+.nav_link {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.2s linear;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 17px;
+    position: relative;
+}
+.nav_link:hover {
+    color: rgb(178, 34, 34);
+
+}
+.nav_link::after {
+    color: rgb(255, 255, 255);
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0.5px;
+    
+    background-color: rgb(178, 34, 34);
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1; 
+
+    transition: opacity 0.1s linear;
+}
+.nav_link:hover::after {
+    opacity: 1;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    margin: 30px;
+    padding: 8px 30px;
+    border: 3px solid #fff;
+    color: #fff;
+    
+    font-style: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.1s linear, colour 0.1s linear;
+}
+.btn:hover {
+    background: rgb(178, 34, 34);
+    color: rgb(255, 255, 255);
+   
+}
